@@ -68,3 +68,5 @@ Execute o script no terminal:
 
 ```bash
 python pares_soma.py
+```
+ou simplesmente copie o código e rode em algum meio de sua preferência.
