@@ -1,0 +1,29 @@
+# n é o termo final da soma
+n = int(input("Digite um número para n: "))
+
+termos = []
+pares = []
+soma_total = 0
+
+# Construção da soma
+for i in range(0, n + 1):
+    termos.append(str(i))
+    soma_total += i
+
+    c = n - i
+    if i < c:
+        pares.append((i, c))
+
+# Impressão da soma
+expressao = " + ".join(termos)
+print(f"{expressao} = {soma_total}")
+
+# Quantidade de pares segundo a observação
+j = soma_total // n
+
+print(f"Existem {j} pares dentro dessa sequência cuja soma resulta em {n}")
+print("São eles:")
+
+for a, b in pares:
+    print(f"{a} + {b} = {n}")
+
